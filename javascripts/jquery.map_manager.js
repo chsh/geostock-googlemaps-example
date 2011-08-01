@@ -6,7 +6,7 @@
             center: null,
             scale: 15,
             api_token: null,
-            request_host: 'geostock.jp',
+            request_host: 'api.geostock.jp',
             request_url: null,
             max: 9, c: 1,
             meters: 2000,
@@ -29,7 +29,7 @@
             jq_list_html.html('');
         },
         request_url: function(settings) {
-            var request_url_base = "http://" + settings.request_host + "/api/";
+            var request_url_base = "http://" + settings.request_host + "/";
             if (settings.api_token != null) {
                 settings.request_url = request_url_base + settings.api_token + "/neighbors";
             }
